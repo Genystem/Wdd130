@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+body{
+    font-family:  var(Grandstander,Merienda,Varela,Roboto);
+    max-width: 960px;
+    padding: 20px;
+}
+:root{
+    --primary-color:#C08672;
+    --secondary-color:#563325;
+    --accent1-color:#000052;
+    --accent2-color:#F5E5E1;
+
+    --heading-font:'Merienda';
+    --Paragraph-font:'Roboto';
+    
+
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color:var(--secondary-color):
+    --nav-hover-background-color:var(--accent2-color):
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+
+}
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+
+}
+
+p{
+    padding: 25px;
+}
+
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, a :visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
